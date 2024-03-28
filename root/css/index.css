@@ -194,3 +194,5 @@ footer .container {
 .menu-conteudo ul ul li {
     background-color: #dcdcdc;
 }
+
+.menu-conteudo li li a:before {content: '- ';}
