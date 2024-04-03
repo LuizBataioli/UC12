@@ -37,7 +37,8 @@ nav ul li a{
     
 }
 .meu-div2{
-    background-image: url(../img/);
+    background-image: url(../img/calculadora.jpeg);
+    background-size: cover;
     text-align:center;
     flex: 1;
     border: 1px solid black;
@@ -53,4 +54,5 @@ footer{
     background-color: #008F8C;
     height: 70px;
     text-align: center;
+    padding-top: 1px;
 }
