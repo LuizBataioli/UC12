@@ -105,12 +105,12 @@ busca form,
 
 .aula1 {
     float: left;
-    background-color: #f5dcdc;
+    background: linear-gradient(#f5dcdc, #bebef4);
 }
 
 .aula2 {
     float: right;
-    background-color: #dcdcf5;
+    background: linear-gradient(#dcdcf5, #f4bebe);
 }
 
 .painel li {
@@ -195,4 +195,33 @@ footer .container {
     background-color: #dcdcdc;
 }
 
-.menu-conteudo li li a:before {content: '- ';}
+.menu-conteudo li li a:before {
+    content: '- ';
+}
+
+.painel {
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px #999;
+    box-shadow: inset 1px 1px 4px #999;
+}
+
+.painel h2 {
+    text-shadow: 3px 3px 2px #FFF;
+}
+
+.busca {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.painel h2 {
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+
+.painel li:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 5px #333;
+    transition: 0.7s;
+    transform: scale(1.2) rotate(-5deg);
+}
