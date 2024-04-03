@@ -56,7 +56,10 @@ header {
     text-transform: uppercase;
     margin-right: 10px;
     width: 230px;
-    float: left
+    float: left;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    clear: left;
 }
 
 .busca h2,
@@ -76,8 +79,22 @@ busca form,
     text-decoration: none;
 }
 
-.menu-conteudo {
-    clear: left;
+.menu-conteudo li ul {
+    display: none;
+    /*por padrão escondida*/
+}
+
+.menu-conteudo li:hover ul {
+    display: block;
+    /*no mouse aparece*/
+}
+
+.menu-conteudo ul ul li {
+    background-color: #dcdcdc;
+}
+
+.menu-conteudo li li a:before {
+    content: '- ';
 }
 
 .busca input {
@@ -92,10 +109,7 @@ busca form,
     margin-top: 10px;
 }
 
-.menu-conteudo {
-    margin-top: 10px;
-    padding-bottom: 10px;
-}
+
 
 .painel {
     margin: 10px 0;
@@ -181,23 +195,7 @@ footer .container {
     color: #867dc6;
 }
 
-.menu-conteudo li ul {
-    display: none;
-    /*por padrão escondida*/
-}
 
-.menu-conteudo li:hover ul {
-    display: block;
-    /*no mouse aparece*/
-}
-
-.menu-conteudo ul ul li {
-    background-color: #dcdcdc;
-}
-
-.menu-conteudo li li a:before {
-    content: '- ';
-}
 
 .painel {
     border-radius: 4px;
