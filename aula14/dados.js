@@ -9,10 +9,22 @@ fetch("./dados.json")
             titulo.textContent = user;
 
             // Itera sobre as propriedades de cada usuário
-            for (const propriedade in users[user]) {
-                const para = document.createElement('p');
-                para.innerText = `${propriedade}: ${propriedade}`;
-                document.querySelector(".pusers").appendChild(para);
+            for (const propriedade of users[user]) {
+
+                const pnome = document.createElement('p');
+                pnome.innerText = propriedade.nome;
+                const pidade = document.createElement('p');
+                pidade.innerText = propriedade.idade;
+                const pcpf = document.createElement('p');
+                pcpf.innerText = propriedade.cpf;
+                const ptelefone = document.createElement('p');
+                ptelefone.innerText = propriedade.telefone;
+                
+
+                document.querySelector(".pusers").appendChild(pnome);
+                document.querySelector(".pusers").appendChild(pidade);
+                document.querySelector(".pusers").appendChild(pcpf);
+                document.querySelector(".pusers").appendChild(ptelefone);
             }
         }
     });
